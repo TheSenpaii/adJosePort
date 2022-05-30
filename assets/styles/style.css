@@ -12,11 +12,12 @@ body {
   overflow: hidden;
 }
 
-h1, h2, h3, a, .menu, td, .tableWorkText {
+h1, h2, h3, a, p, li .menu {
   font-family: 'akiraFont';
   color: white;
   text-decoration:none;
-  }
+}
+
 
 a:hover{
   transition: 0.3s ease;
@@ -69,36 +70,46 @@ a:hover{
 
 /* WORK */
 
-.tableWork {
-  width: 95vw;
-  height: 100%;
-  flex: none;
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.work-gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.workPiece {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
-  overflow-clip-margin: initial;
-  position: relative;
+  margin: 1px 1px;
+  border-radius: 1px;
+  align-items: flex-start;
+  justify-content: end;
+  font-size: 22px;
+  padding-left: 8px;
+  padding-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 
-.tableWorkImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+.workSub {
+  font-size: x-small;
 }
 
-td {
-  height: 30vh;
-  width: 30vw;
-  background-color: grey;
-  position: relative;
+.PieceUnluckySponsor {
+  background-image: url(../../pages/work/assets/theStandOut.jpg)
 }
 
-p .tableText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 /* EXPERIENCE */
 
