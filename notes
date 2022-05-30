@@ -1,0 +1,57 @@
+HTML
+
+
+//// LISTS
+
+
+// Unordered Lists 
+Every unordered list starts off with a <ul> element—this wraps around all the list items. To mark up elements inside the list, we use the <li> command. 
+ 
+// Ordered Lists
+The markup structure is the same as for unordered lists, except that you have to wrap the list items in an <ol> element, rather than <ul>.
+
+// Nesting
+It is perfectly OK to nest one list inside another one. You might want to have some sub-bullets sitting below a top-level bullet. So the list might start with <ol>, but if then you might need to present two options after an element, you could use the <ul> and <li> tag, and, after closing the </ul>, you can continue using <li> tag in reference to the original <ol>.
+
+// Description List
+ The purpose of these lists is to mark up a set of items and their associated descriptions, such as terms and definitions, or questions and answers. Description lists use a different wrapper than the other list types — <dl>; in addition each term is wrapped in a <dt> (description term) element, and each description is wrapped in a <dd> (description definition) element.
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#description_list_example
+
+
+
+//// TEXT
+
+// Headers
+<h1> - <h6>
+
+// Span Tag
+The <span> HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <span> is very much like a <div> element, but <div> is a block-level element whereas a <span> is an inline element.
+
+// Emphasis - Italics
+<em>
+<i>
+
+// Emphasis - Bold
+<strong>
+<b>
+CSS styling is strongly recommended to be used instead.
+
+// Emphasis - Underline
+<u> is used to convey a meaning traditionally conveyed by underline: proper name, misspelling...
+
+// Blockquotes
+If a section of block level content (be it a paragraph, multiple paragraphs, a list, etc.) is quoted from somewhere else, you should wrap it inside a <blockquote> element to signify this, and include a URL pointing to the source of the quote inside a cite attribute. <blocquote cite = "linkToTheSource"> Quote </blockquote>
+
+
+
+// Overflow
+
+Que hago con lo que se sale dew la caja
+
+// OverFlow X
+
+Es que pasa con lo que sale pore el eje X u horizontal
+
+// Overflow Y
+
+Es vertical

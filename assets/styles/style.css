@@ -1,0 +1,99 @@
+/* GENERAL */
+
+@font-face {
+  font-family: akiraFont;
+  src: url('../fonts/Akira\ Expanded\ Demo.otf');
+  }
+
+body {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+h1, h2, h3, a, .menu, td, .tableWorkText {
+  font-family: 'akiraFont';
+  color: white;
+  text-decoration:none;
+  }
+
+a:hover{
+  transition: 0.3s ease;
+  font-family: akiraFont;
+  color: #D7263D;
+}
+
+/* MENU */
+
+.menu { 
+  width: 3vw;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: black;
+  border-left-color: white;
+  background-color: black;
+  margin: 0px 1vw 0px 1vw;
+  }
+  
+  .menuItem {
+    font-size: 35px;
+    text-align: center; 
+    writing-mode: vertical-rl;
+    transition: 0.3s ease;
+  }
+  
+  .menuItemHome {
+    padding: 10px 0px 0px 0px;
+  }
+  .menuItemContact {
+    padding: 0px 0px 10px 0px;
+  }
+
+/* HOME */
+
+.logoHomeJoses, h1 {  
+  position: fixed;
+  top: -5vh;
+  left: 1%;
+  font-size: 100px;
+  white-space: initial;
+  text-decoration:none;
+}  
+
+/* WORK */
+
+.tableWork {
+  width: 97vw;
+  height: 100%;
+}
+
+.tableWorkImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+td {
+  height: 30vh;
+  width: 30vw;
+  text-align: left;
+  vertical-align: bottom;
+  background-color: grey;
+  overflow: scale-down;
+}
+
+
+/* EXPERIENCE */
+
+.expText {
+  margin-top: 20%;
+  text-align: center;
+}
