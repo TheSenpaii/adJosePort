@@ -43,7 +43,7 @@ a:hover{
   }
   
   .menuItem {
-    font-size: 35px;
+    font-size: 40px;
     text-align: center; 
     writing-mode: vertical-rl;
     transition: 0.3s ease;
@@ -53,7 +53,7 @@ a:hover{
     padding: 10px 0px 0px 0px;
   }
   .menuItemContact {
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 15px 0px;
   }
 
 /* HOME */
@@ -62,10 +62,10 @@ a:hover{
   position: fixed;
   top: -5vh;
   left: 1%;
-  font-size: 100px;
+  font-size: 150px;
   white-space: initial;
   text-decoration:none;
-}  
+} 
 
 /* WORK */
 
