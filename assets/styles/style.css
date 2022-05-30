@@ -70,8 +70,12 @@ a:hover{
 /* WORK */
 
 .tableWork {
-  width: 97vw;
+  width: 95vw;
   height: 100%;
+  flex: none;
+  overflow: hidden;
+  overflow-clip-margin: initial;
+  position: relative;
 }
 
 .tableWorkImage {
@@ -79,17 +83,22 @@ a:hover{
   height: 100%;
   object-fit: cover;
   object-position: center;
+  display: block;
 }
 
 td {
   height: 30vh;
   width: 30vw;
-  text-align: left;
-  vertical-align: bottom;
   background-color: grey;
-  overflow: scale-down;
+  position: relative;
 }
 
+p .tableText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* EXPERIENCE */
 
