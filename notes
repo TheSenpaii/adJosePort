@@ -55,3 +55,8 @@ Es que pasa con lo que sale pore el eje X u horizontal
 // Overflow Y
 
 Es vertical
+
+
+
+// responsiveness
+@media only screen and (max-width: 768px) {}
