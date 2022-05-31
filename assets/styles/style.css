@@ -15,7 +15,7 @@ body {
   overflow: hidden;
   font-family: 'akiraFont';
   color: white;
-  padding: 0px 60px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 a {
@@ -70,28 +70,32 @@ a:hover{
 
 ul {
   list-style-type: none;
-  margin: 0px;
+  margin: 0px 0px 0px 0px;
+  margin-block-start: 0px;
+  padding-inline-start: 0px;
+  margin-block-end: 0px;
 }
 
 .work-gallery-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-items: center;
 }
 
 .workPiece {
   position: relative;
   display: flex;
-  width: 31vw;
-  height: 30vh;
+  justify-content: space-evenly;
+  width: 33vw;
+  height: 34vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #D7263D;
   font-size: 40px;
-  text-align: center; 
+  text-align: center;
   align-items: center;
-  margin: 0px;
 }
 
 .workPiece:hover{
@@ -223,7 +227,7 @@ ul {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #D7263D;
+  background-color: blue;
   font-size: 10px;
   text-align: center; 
   align-items: center;
