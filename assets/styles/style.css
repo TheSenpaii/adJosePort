@@ -49,7 +49,7 @@ a:hover{
   }
   
   .menuItem {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center; 
     writing-mode: vertical-rl;
     transition: 0.3s ease;
@@ -83,12 +83,12 @@ ul {
   position: relative;
   display: flex;
   width: 31vw;
-  height: 33vh;
+  height: 30vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #D7263D;
-  font-size: 3rem;
+  font-size: 40px;
   text-align: center; 
   align-items: center;
   margin: 0px;
@@ -123,12 +123,110 @@ ul {
   background-blend-mode: normal;
 }
 
+.PieceAncestral {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../../pages/work/assets/Ancestral.jpg);
+  background-color: black;
+  background-blend-mode: luminosity;
+}
+
+.PieceSigns {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../../pages/work/assets/Sign.jpg);
+  background-color: black;
+  background-blend-mode: luminosity;
+}
+
+.PieceOwnStory {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../../pages/work/assets/OwnStory.jpg);
+  background-color: black;
+  background-blend-mode: luminosity;
+}
+
+.PieceEmbassy {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../../pages/work/assets/EmbassyChoice.jpg);
+  background-color: black;
+  background-blend-mode: luminosity;
+}
+
+.PieceOpenFeature {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../../pages/work/assets/OpenFeature.jpg);
+  background-color: black;
+  background-blend-mode: luminosity;
+}
+
+.PieceSmells {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../../pages/work/assets/SmellsVictory.jpg);
+  background-color: black;
+  background-blend-mode: luminosity;
+}
+
+
+
+
+
+
+/* IPHONE X */
 
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-    .menu{
-      background-color: #D7263D;
-    } 
+
+body {
+  width: 375px;
+}
+
+.menu { 
+  position: fixed;
+  width: 10vw;
+  height: 100%;
+  padding: 1px 1px 1px 1px;
+  }
+  
+  .menuItem {
+    font-size: 20px;
+  }
+
+/*
+.logoHomeJoses {  
+  position: fixed;
+  top: -5vh;
+  left: 1%;
+  font-size: 150px;
+  white-space: initial;
+  text-decoration:none;
+} 
+*/
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+
+
+.work-gallery-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.workPiece {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #D7263D;
+  font-size: 10px;
+  text-align: center; 
+  align-items: center;
+  margin: 0px;
+}
   }
