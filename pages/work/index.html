@@ -1,80 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>José & José</title>
         <link rel="stylesheet" href="../../assets/styles/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
     <body>
 
       <div class="logoHomeJosesAlt">
-        <a href="https://losjos.es/">josé & josé</a>
+        <a class="logoHomeJosesAltText" href="../../index.html">josé & josé</a>
       </div>
-
-
-      <main class="Loop js-loop">
-        <section class="Scroll UnluckySponsor">
-          <a>Unlucky Sponsor</a>
-        </section>
-        <section class="Scroll StandOut">
-          <h1>The Stand-Out</h1>
-        </section>
-        <section class="Scroll AncestralTranslation">
-          <h1>Ancestral Translation</h1>
-        </section>
-        <section class="Scroll OpenFeature">
-          <h1>Open Feature</h1>
-        </section>
-        <section class="Scroll SignDiscounts">
-          <h1>Sign Discounts</h1>
-        </section>
-        <section class="Scroll My Own Story">
-          <h1>My Own Story</h1>
-        </section>
-        <section class="Scroll Choice Embassy">
-          <h1>Choice Embassy</h1>
-        </section>
-        <!--
-        These blocks are the same as the first blocks to get that looping illusion going.
-        You need to add clones to fill out a full viewport height.
-        -->
-        <section class="Cancer Legals">
-          <h1>Cancer Legals</h1>
-        </section>
-        <section class="Smells Like Victory">
-          <h1>Smells Like Victory</h1>
-        </section>
-      </main>
-
-
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
-            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-          
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-              apiKey: "AIzaSyBcv7rlimLwR1fptCsiZZ5IdJ0-NghBz7U",
-              authDomain: "los-joses.firebaseapp.com",
-              projectId: "los-joses",
-              storageBucket: "los-joses.appspot.com",
-              messagingSenderId: "750594143339",
-              appId: "1:750594143339:web:c8f3bcb381cadb68832d2e",
-              measurementId: "G-TNSF5TDEGH"
-            };
-          
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const analytics = getAnalytics(app);
-          </script>
+      <nav class="menu">
+        <div class="menu-item"><a class="menu-item-inner">unlucky sponsor</a></div>
+        <div class="menu-item"><a class="menu-item-inner">the stand out</a></div>
+        <div class="menu-item"><a class="menu-item-inner">ancestral translation</a></div>
+        <div class="menu-item"><a class="menu-item-inner">open feature</a></div>
+        <div class="menu-item"><a class="menu-item-inner">sign discounts</a></div>
+        <div class="menu-item"><a class="menu-item-inner">my own story</a></div>
+        <div class="menu-item"><a class="menu-item-inner">choice embassy</a></div>
+        <div class="menu-item"><a class="menu-item-inner">cancer legals</a></div>
+        <div class="menu-item"><a class="menu-item-inner">smell like victory</a></div>
+      </nav>
+    <script src="../../js/app.js"></script>
     </body>
-
-
 </html>
 
 

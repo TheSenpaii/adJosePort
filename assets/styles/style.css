@@ -1,7 +1,9 @@
 /* GENERAL */
 
 * {
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 @font-face {
@@ -9,33 +11,22 @@
   src: url('../fonts/Louis\ George\ Cafe\ Bold.ttf');
   }
 
-body {
-  background-color: #F8F8F8;
-  width: 100vw;
-  height: 100vh;
-  font-family: 'louisFont';
-}
+  a {
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10%;
+	text-decoration: none;
+	letter-spacing: 2px;
+}  
 
-a, h1 {
-  color: #7f7f7f;
-  text-decoration: none;
-}
-
-/* MENU */
-
-.menu { 
-  font-size: 25px;
-  text-align: center;
-  z-index: 1;
-  color: #9a9a9a;
-  }
-  
 /* HOME */
+
 
 .logoHomeJoses {  
   position: relative;
   text-align: center;
-  font-size: 45px;
   text-decoration: none;
   padding-top: calc(50vh - 100px);
 } 
@@ -43,145 +34,55 @@ a, h1 {
 .logoHomeJosesAlt {  
   position: relative;
   text-align: left;
-  font-size: 45px;
   text-decoration: none;
-  padding-top: 50px;
+  padding: 200px 0px 0px 40px;
+  z-index: 1;
+  left: -5%;
+}
+
+.logoHomeJosesAltText {
+	font-size: 50px;
+	color: #3e3e3e;
+}
 
 /* WORK */
 
-/*
-.Loop {
-  position: relative;
-  height: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-*/
-
-section {
-  position: relative;
-  text-align: left;
-  min-height: 300px;
-  max-height: 700px;
-  height: 80%;
+html, body {
+	height: 100%;
+	width: 100vw;
+	overflow: hidden;
+	background-color: white;
 }
 
-::scrollbar {
-  display: none;
+.menu {
+	position: relative;
+	height: 90%;
+	width: 80%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	padding: 0px 0px 0px 20px;
 }
 
-h1 {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  font-size: 80px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
+.menu-item {
+	position: relative;
+	height: 20%;
+	padding: 0px 0px 0px 0px;
 }
 
-
-
-
-
-
-/*
-.PieceUnluckySponsor {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(../../pages/work/assets/unluckySponsor.jpg);
-  background-color: black;
-  background-blend-mode: luminosity;
+.menu-item-inner {
+	color: #909090;
 }
 
-.PieceUnluckySponsor:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../pages/work/assets/unluckySponsor.gif);
-  background-blend-mode: normal;
+a:hover {
+	opacity: 0.6;
 }
 
-.PieceStandOut {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(../../pages/work/assets/theStandOut.jpg);
-  background-color: black;
-  background-blend-mode: luminosity;
+/* Hide Scrollbar */
+
+* {
+	scrollbar-width: none;
 }
 
-.PieceStandOut:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../pages/work/assets/theStandOut.gif);
-  background-blend-mode: normal;
+*::-webkit-scrollbar {
+	display: none;
 }
-
-.PieceAncestral {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(../../pages/work/assets/Ancestral.jpg);
-  background-color: black;
-  background-blend-mode: luminosity;
-}
-
-.PieceAncestral:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../pages/work/assets/Ancestral.gif);
-  background-blend-mode: normal;
-}
-
-.PieceLegals {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(../../pages/work/assets/Legals.jpg);
-  background-color: black;
-  background-blend-mode: luminosity;
-}
-
-.PieceSigns {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(../../pages/work/assets/Sign.jpg);
-  background-color: black;
-  background-blend-mode: luminosity;
-}
-
-.PieceSigns:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../pages/work/assets/Sign.gif);
-  background-blend-mode: normal;
-}
-
-.PieceOwnStory {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(../../pages/work/assets/OwnStory.jpg);
-  background-color: black;
-  background-blend-mode: luminosity;
-}
-
-.PieceOwnStory:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../pages/work/assets/OwnStory.gif);
-  background-blend-mode: normal;
-}
-
-.PieceEmbassy {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(../../pages/work/assets/EmbassyChoice.jpg);
-  background-color: black;
-  background-blend-mode: luminosity;
-}
-
-.PieceEmbassy:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../pages/work/assets/EmbassyChoice.gif);
-  background-blend-mode: normal;
-}
-
-.PieceOpenFeature {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(../../pages/work/assets/OpenFeature.jpg);
-  background-color: black;
-  background-blend-mode: luminosity;
-}
-
-.PieceOpenFeature:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../../pages/work/assets/OpenFeature.gif);
-  background-blend-mode: normal;
-}
-
-.PieceSmells {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url(../../pages/work/assets/SmellsVictory.jpg);
-  background-color: black;
-  background-blend-mode: luminosity;
-}
-*/
