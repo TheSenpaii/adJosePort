@@ -1,3 +1,5 @@
+// INFINITE SCROLL //
+
 let menu = document.querySelector('.menu');
 let items = document.querySelectorAll('.menu-item');
 let clones = [];
@@ -5,7 +7,6 @@ let disableScroll = false;
 let scrollheight = 0;
 let scrollpos = 0;
 let clonesHeight = 0;
-
 
 function getScrollPos(){
     return menu. scrollTop; // Amount window scrolled
@@ -79,3 +80,23 @@ function onLoad(){
 }
 
 window.onload = onLoad();
+
+
+
+
+// COLLAPSE WORK //
+
+var coll = document.getElementsByClassName("menu-item");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
